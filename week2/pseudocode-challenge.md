@@ -1,14 +1,24 @@
 # Pseudocode Challenge
 
 ## 1. Newton Second Law
+* Algoritma
 ```
-STORE "F" with no value
-STORE "mass" with any value
-STORE "acceleration" with any value
-STORE "people" with any value
-CALCULATE "m" times "a" times "people"
-SET "F" value with calculation result
-DISPLAY "F"
+buat variabel 'F' dengan nilai 0
+buat variabel 'mass' dan isi dengan nilai berapapun
+buat variabel 'acceleration' dan isi dengan nilai berapapun
+buat variabel 'people' dan isi dengan nilai berapapun
+hitung 'mass' dikali 'acceleration' dikali 'people'
+taruh hasil kalkulasi di variabel 'F' 
+```
+* Pseudocode
+```
+STORE 'F' with no value
+STORE 'mass' with any value
+STORE 'acceleration' with any value
+STORE 'people' with any value
+CALCULATE 'mass' times 'acceleration' times 'people'
+SET 'F' value with calculation result
+DISPLAY 'F'
 ```
 
 ## 2. Tahun Kabisat
@@ -24,10 +34,10 @@ dan jika kondisi diatas tidak ada yang terpenuhi
 ```
 * Pseudocode
 ```
-STORE "year" with any value
-IF "year" mod 4 equal to 0 AND "year" mod 100 not equal to 0
+STORE 'year' with any value
+IF 'year' mod 4 equal to 0 AND 'year' mod 100 not equal to 0
   DO "Tahun Kabisat"
-ELSE IF "year" mod 4 equal to 0 AND "year" mod 100 equal to 0 AND "year" mod 400 equal to 0
+ELSE IF 'year' mod 4 equal to 0 AND 'year' mod 100 equal to 0 AND 'year' mod 400 equal to 0
   DO "Tahun Kabisat"
 ELSE
   DO "Bukan Tahun Kabisat"
@@ -44,10 +54,10 @@ setelah 'index' sama dengan 'clothes' panggil fungsi jalankanMesinCuci()
 ```
 * Pseudocode
 ```
-STORE "clothes" with any value
-STORE "index" with 0
-WHILE "index" < "clothes"
-  ADD "index" by 1
+STORE 'clothes' with any value
+STORE 'index' with 0
+WHILE 'index' < 'clothes'
+  ADD 'index' by 1
 DO jalankanMesinCuci
 ```
 
@@ -64,10 +74,10 @@ buat loop dengan kondisi 'index' kurang dari panjang array 'murid'
 ```
 * Pseudocode
 ```
-STORE array of boolean "murid" with any value
-STORE "index" with 0
-WHILE "index" < "murid".length
-  IF "murid"["index"] equal to TRUE
+STORE array of boolean 'murid' with any value
+STORE 'index' with 0
+WHILE 'index' < 'murid'.length
+  IF 'murid'['index'] equal to TRUE
     DO "Baguuus"
   ELSE
     DO "Kamu berdiri dipojok!"
