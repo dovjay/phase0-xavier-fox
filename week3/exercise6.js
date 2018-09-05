@@ -5,7 +5,7 @@ function angkaPalindrom(num) {
   let i = 0;
   let j = str.length-1;
   while (i < str.length) {
-    if (num < 10) {
+    if (num < 9) {
       return num + 1;
     } else if (str[i] === str[j]) {
       i++;
