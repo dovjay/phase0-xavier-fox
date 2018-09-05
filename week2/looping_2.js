@@ -8,7 +8,7 @@ for(let i = 0; i < rows1; i++) {
 // 2. Menyusun Barisan Bintang Dengan Nested Looping
 var rows2 = 5;
 for(let i = 0; i < rows2; i++) {
-  for(let j = 0; j < rows2; j++) {
+  for(var j = 0; j < rows2; j++) {
     str += '*';
   }
   console.log(str);

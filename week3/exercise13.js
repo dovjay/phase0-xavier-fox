@@ -3,7 +3,6 @@ function targetTerdekat(arr) {
   for (let i=0; i<arr.length; i++) {
     if (arr[i] == 'o') {
       space = 0;
-      continue;
     } else if (arr[i] == 'x') {
       space++;
       return space;
