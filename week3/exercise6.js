@@ -12,9 +12,9 @@ function angkaPalindrom(num) {
       j--;
     } else {
       num+=1;
+      str = String(num);
       i = 0;
       j = str.length-1;
-      str = String(num);
     }
   }
   return num;

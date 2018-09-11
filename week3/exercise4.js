@@ -48,11 +48,8 @@ function dataHandling2(arr) {
       console.log('Error');
       break;
   }
-  for (let i=0; i<namaBulan.length; i++) {
-    namaBulan[i] = Number(namaBulan[i]);
-  }
   ddmmyy = namaBulan.join('-');
-  namaBulan.sort(function(value1, value2) { return value1 < value2 });
+  namaBulan.sort(function(value1, value2) { return value1 < value2 })
   console.log(namaBulan);
   console.log(ddmmyy);
   var potongNama = arr[1].slice(0, 15);
