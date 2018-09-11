@@ -6,8 +6,7 @@
 buat variabel 'F' dengan nilai 0
 buat variabel 'mass' dan isi dengan nilai berapapun
 buat variabel 'acceleration' dan isi dengan nilai berapapun
-buat variabel 'people' dan isi dengan nilai berapapun
-hitung 'mass' dikali 'acceleration' dikali 'people'
+hitung 'mass' dikali 'acceleration'
 taruh hasil kalkulasi di variabel 'F' 
 ```
 * Pseudocode
@@ -15,8 +14,7 @@ taruh hasil kalkulasi di variabel 'F'
 STORE 'F' with no value
 STORE 'mass' with any value
 STORE 'acceleration' with any value
-STORE 'people' with any value
-CALCULATE 'mass' times 'acceleration' times 'people'
+CALCULATE 'mass' times 'acceleration'
 SET 'F' value with calculation result
 DISPLAY 'F'
 ```
