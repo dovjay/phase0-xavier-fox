@@ -1,24 +1,29 @@
 function cariModus(arr) {
-  var tmp = arr[0];
-  var arrMedian = [];
-  arr.sort(function(value1, value2) { return value1 > value2});
-  for (let i=1; i<arr.length; i++) {
-    if (tmp === arr[i]) {
-      arrMedian.push(arr[i]);
+  var Modus = new Object();
+  var tmp = 0;
+  var result = '';
+  for (let i=0; i<arr.length; i++) {
+    if (typeof Modus[arr[i]] == 'undefined') {
+      Modus[arr[i]] = 1;
     } else {
-      tmp = arr[i];
+      Modus[arr[i]]++;
     }
   }
-  tmp = arrMedian[0];
-  if (arrMedian) {
-    for(let i=1; i<=arrMedian.length; i++) {
-    if (tmp !== arrMedian[i]) {
-      return tmp;
+  var arrModus = Object.keys(Modus)
+  for (let i=0; i<arrModus.length; i++) {
+    if (tmp < Modus[arrModus[i]]) {
+      tmp = Modus[arrModus[i]];
+      result = arrModus[i];
     }
+  }
+  if (tmp === 1) {
     return -1;
-    }
   }
-  return -1;
+  if (Object.keys(Modus).length > 1) {
+    return result;
+  } else {
+    return -1;
+  }
 }
 
 // TEST CASES
