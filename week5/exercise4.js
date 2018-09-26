@@ -1,32 +1,16 @@
 function graduates(students) {
   var lulusan = new Object();
   const MIN_SCORE = 75;
-  for (let i=0; i<students.length; i++) {
-    switch(students[i].class) {
-      case 'foxes':
-        if (students[i].score > MIN_SCORE) {
-          if (typeof lulusan.foxes === 'undefined') {
-            lulusan.foxes = [];
-          }
-          lulusan.foxes.push({name: students[i].name, score: students[i].score});
-        }
-        break;
-        case 'wolves':
-        if (students[i].score > MIN_SCORE) {
-          if (typeof lulusan.wolves === 'undefined') {
-            lulusan.wolves = [];
-          }
-          lulusan.wolves.push({name: students[i].name, score: students[i].score});
-        }
-        break;
-        case 'tigers':
-        if (students[i].score > MIN_SCORE) {
-          if (typeof lulusan.tigers === 'undefined') {
-            lulusan.tigers = [];
-          }
-          lulusan.tigers.push({name: students[i].name, score: students[i].score});
-        }
-        break;
+  for (let i = 0; i < students.length; i++) {
+    if (lulusan[students[i].class] == undefined) {
+      if (students[i].score >= MIN_SCORE) {
+        lulusan[students[i].class] = [];
+        lulusan[students[i].class].push({ name: students[i].name, score: students[i].score });
+      }
+    } else {
+      if (students[i].score >= MIN_SCORE) {
+        lulusan[students[i].class].push({ name: students[i].name, score: students[i].score });
+      }
     }
   }
   return lulusan;

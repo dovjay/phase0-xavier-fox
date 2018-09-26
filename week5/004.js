@@ -2,16 +2,22 @@ function squareNumber(num) {
   let i=1;
   var result = [];
   var arrayTmp = [];
-
+  var baris = 1;
   if (num < 3) {
     return 'Minimal input adalah 3';
   
   }
   while (i <= num * num) {
     for (let j=0; j<num; j++) {
-      arrayTmp.push(i);
-      i++;
+      if (baris % 2 !== 0) {
+        arrayTmp.push(i);
+        i++;
+      } else {
+        arrayTmp.unshift(i);
+        i++;
+      }
     }
+    baris++;
     result.push(arrayTmp);
     arrayTmp = [];
   }
